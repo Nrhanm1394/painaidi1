@@ -1,0 +1,397 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>{% block title %}ริมธารา สวนผึ้ง{% endblock %}</title>
+    <link rel="stylesheet" href="{% static './lib/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static './lib/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static './css/style.css'%}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #213357;padding: 15px;">
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="static/images/logo4.png" alt="" width="160px" height="80px"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item" style="margin-right: 25px;">
+                    <a class="nav-link" href="{% url 'about' %}">เกี่ยวกับฉัน</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="{% url 'region' %}" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ภาคของไทย</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="{% url 'region' %}">ภาคของไทย</a>
+                        <a class="dropdown-item" href="{% url 'central' %}">ภาคกลาง</a>
+                        <a class="dropdown-item" href="{% url 'north' %}">ภาเหนือ</a>
+                        <a class="dropdown-item" href="{% url 'northeast' %}">ภาคอีสาน</a>
+                        <a class="dropdown-item" href="{% url 'south' %}">ภาคใต้</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="หมวดเที่ยว" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หมวดเที่ยว</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{% url 'group' %}">หมวดเที่ยว</a>
+                        <a class="dropdown-item" href="{% url 'camping' %}">แคมป์ปิ้ง</a>
+                        <a class="dropdown-item" href="{% url 'nature' %}">ธรรมชาติ</a>
+                        <a class="dropdown-item" href="{% url 'sea' %}">ทะเล</a>
+                        <a class="dropdown-item" href="{% url 'photograph' %}">ถ่ายรูป</a>
+                    </div>
+                </li>
+                
+              
+            </ul>
+            <a href="{% url 'contact' %} "><button class="btn btn-outline-light " type="submit" style="margin-right: 60px;">CONTACT</button></a>
+        </div>
+        </div>
+    </nav>
+
+    <img src="static/images/c/c5/1.jpg" alt="" width="100%" height="110%">
+    <div class="container" style="font-size: 17.5px;">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <br>
+                <p> หลงรักเขา เข้าแล้ว <br> ธรรมชาติสวยงามเสมอ Rimtara - ริมธารา แคมป์ปิ้ง สวนผึ้ง สวรรค์ของสายแค้มป์ <br> ธรรมชาติที่คุณต้องหลงไหล สดชื่นไปกับสายน้ำเอื่อยๆ เคล้าเสียงแมลงที่ส่งเสียงกรีดร้อง หรือจะชอบโซนป่าของที่นี่ก็สวยงามไม่น้อย ได้ครื้นเครงไปกับเสียงดนตรี
+                    ดีดกีต้าร์ล้อมวง ปาร์ตี้ ผิงไฟ ร้องเพลงสนุกสนานเฮฮา ได้ใช้ชีวิตง่ายๆ กินอยู่ง่ายๆ ไม่ว่าคุณจะมากับใคร มาจากไหน เราไม่รู้ แต่มาอยู่ด้วยกันแล้วเกิดรอยยิ้ม เกิดมิตรภาพ แถมตบท้ายด้วยบรรยากาศชิวๆ นี่แหละความสุขล้วนๆ ที่คุณไม่มีวันลืม ธรรมชาติจะหลงรักคุณ
+                    ถ้าคุณรักเค้าจริง
+
+                </p>
+                <br>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <img src="static/images/c/c5/2.jpg" alt="" width="75%" height="100%">
+    </div>
+    <div class="container-fluid text-center">
+        <img src="static/images/c/c5/3.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col "></div>
+            <div class="col ">
+
+                <br>
+                <p> ที่นี้มีทั้งโซนป่า และโซนริมน้ำ <br> สามารถเลือกจุดกางเต้นท์ตามตามสไตล์ความชอบเลยและไม่ทำลายธรรมชาติ ธรรมชาติจะหลงรักคุณ ถ้าคุณรักเค้าจริง
+                </p>
+                <br>
+            </div>
+            <div class="col "></div>
+        </div>
+    </div>
+
+
+    <div class="container text-center ">
+        <img src="static/images/c/c5/4.jpg " alt=" " width="75%" height="100%">
+    </div>
+    <div class="container " style="font-size: 17.5px; ">
+        <div class="row ">
+            <div class="col "></div>
+            <div class="col ">
+
+                <br>
+                <p> เขียว ชุ่มชื่น มากกกก <br> ฉันรักสีเขียว ฉันรักธรรมชาติ
+
+                </p>
+                <br>
+            </div>
+            <div class="col "></div>
+        </div>
+    </div>
+    <div class="container text-center ">
+        <img src="static/images/c/c5/5.jpg " alt=" " width="75%" height="100%">
+    </div>
+    <div class="container text-center ">
+        <img src="static/images/c/c5/6.jpg " alt=" " width="75%" height="100%">
+    </div>
+    <div class="container " style="font-size: 17.5px; ">
+        <div class="row ">
+            <div class="col "></div>
+            <div class="col ">
+
+                <br>
+                <p> ส่วนนี้คือเต้นท์ของมิตรสหายของเราในทริปนี้ ลำธารน้ำใส และเย็นชุ่มฉ่ำมาก
+                </p>
+                <br>
+            </div>
+            <div class="col "></div>
+        </div>
+    </div>
+
+    <div class="container text-center ">
+        <img src="static/images/c/c5/7.jpg " alt=" " width="75%" height="100%">
+    </div>
+    <div class="container " style="font-size: 17.5px; ">
+        <div class="row ">
+            <div class="col "></div>
+            <div class="col ">
+
+                <br>
+                <p> มีเปลให้นอนเล่นด้วยนะ
+
+                </p>
+                <br>
+            </div>
+            <div class="col "></div>
+        </div>
+    </div>
+    <div class="container text-center ">
+        <img src="static/images/c/c5/8.jpg " alt=" " width="75%" height="100%">
+    </div>
+    <div class="container " style="font-size: 17.5px; ">
+        <div class="row ">
+            <div class="col "></div>
+            <div class="col ">
+
+                <br>
+                <p> ที่นี้มีห้องน้ำไว้ให้บริการนะครับ
+                    <br> -อาบน้ำ
+                    <br> -เข้าห้องน้ำ
+
+
+                </p>
+                <br>
+            </div>
+            <div class="col "></div>
+        </div>
+    </div>
+
+    <div class="container text-center ">
+        <img src="static/images/c/c5/9.jpg " alt=" " width="75%" height="100%">
+    </div>
+    <div class="container " style="font-size: 17.5px; ">
+        <div class="row ">
+            <div class="col "></div>
+            <div class="col ">
+
+                <br>
+                <p> นั่งบนบกมันยังชิวไม่พอ ก็ลองย้ายมานั่งเล่นกันในน้ำดู
+                    <br> ชิวมากจร้าแม่จร้า
+
+
+                </p>
+                <br>
+            </div>
+            <div class="col "></div>
+        </div>
+    </div>
+
+    <div class="container text-center ">
+        <img src="static/images/c/c5/10.jpg " alt=" " width="75%" height="100%">
+    </div>
+    <div class="container " style="font-size: 17.5px; ">
+        <div class="row ">
+            <div class="col "></div>
+            <div class="col ">
+
+                <br>
+                <p> บรรยากาศยามค่ำคืน <br> ยามค่ำคืนครื้นเครงไปกับเสียงดนตรี ดีดกีต้าร์ล้อมวง ปาร์ตี้ ผิงไฟ ร้องเพลงสนุกสนานเฮฮา ได้ใช้ชีวิตง่ายๆ กินอยู่ง่ายๆ
+
+
+                </p>
+                <br>
+            </div>
+            <div class="col "></div>
+        </div>
+    </div>
+    <div class="container text-center ">
+        <img src="static/images/c/c5/11.jpg " alt=" " width="75%" height="100%">
+    </div>
+    <div class="container " style="font-size: 17.5px; ">
+        <div class="row ">
+            <div class="col "></div>
+            <div class="col ">
+
+                <br>
+                <p> ก่อนกลับ ก็ขอแวะมาถ่ายรูปกับโซนป่าเก็บไว้หน่อย
+                    <br> โซนป่าก็ได้ฟิวอีกแบบนึงนะ ใครชอบแบบนี้ต้องลองไปแค้มป์ดู
+                </p>
+                <p>
+                    รายละเอียดที่พัก
+                    <br> - ค่าบริการกางเต็นท์ 150 บาท /คน/คืน
+                    <br> ลูกค้าต้องนำเต็นท์มาเองทางที่พักไม่มีบริการ
+                    <br> ( เด็กอายุต่ำกว่า 10 ปี เข้าฟรี!!!!)
+                    <br> - อุปกรณ์การทำอาหาร ลูกค้าสามารถนำมาทำเองได้ เนื่องจากทางที่พักไม่มีให้เช่า (ที่สำคัญงดใช้เตาไฟฟ้านะคะ)
+                    <br> - ลูกค้าสามารถตั้งแคมป์ได้ 9:00 น เป็นต้นไป และเข้าพักกี่ท่าน แจ้งที่จุดบริการลูกค้าได้เลยค่ะ
+                    <br> •• สิ่งอำนวยความสะดวก
+                    <br> - ห้องน้ำ
+                    <br> - จุดบริการลูกค้า
+                    <br> - ปลั๊กไฟ
+                    <br> - มีสัญญาณ ais
+                    <br> - มีบริการส่งข้าว อาหารตามสั่งจากร้านค้าใกล้เคียง
+                    <br> - จุดทิ้งขยะ
+                    <br> •• ข้อห้าม ( ขอความร่วมมือหน่อยนะคะ)
+                    <br> - ไม่ให้นำสัตว์เลี้ยงเข้าไปก่อนได้รับอนุญาต
+                    <br> - งดส่งเสียงดังหลัง 22:00 น
+                    <br> FB : <a href="https://www.facebook.com/rimtara.camping">Rimtara - ริมธารา แคมป์ปิ้ง สวนผึ้ง</a>
+                    <br> โทร : 0630738554 (คุณแขก) , 081-1719981 (คุณสัน)
+                    <br> พิกัด : <a href="https://goo.gl/maps/L7Rw5dsDZz9Wqfau8">https://goo.gl/maps/L7Rw5dsDZz9Wqfau8</a>
+                    <br> ริมธารา แคมป์ปิ้ง ตำบลตะนาวศรี อำเภอสวนผึ้ง จังหวัดราชบุรี
+                    <br> ใครที่กำลังมองหากระเป๋าใช้เดินทาง กระเป๋าแค้มป์ปิ้ง เราแนะนำที่เพจนี้เลย
+                    <br> FB : BLACK PACK
+                    <a href="https://www.facebook.com/BlackPackTrip">https://www.facebook.com/BlackPackTrip</a>
+                </p>
+                <br>
+            </div>
+            <div class="col "></div>
+        </div>
+    </div>
+
+    <div class="container " style="margin-bottom: 50px; ">
+        <div class="col "></div>
+    </div>
+    <div class="container " style="margin-bottom: 50px; ">
+
+        <div class="col text-center ">
+            <tr>
+                <img src="static/images/c/c5/4.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+            <tr>
+                <img src="static/images/c/c5/5.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+            <tr>
+                <img src="static/images/c/c5/3.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+        </div>
+        <div class="col text-center ">
+            <tr>
+                <img src="static/images/c/c5/13.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+            <tr>
+                <img src="static/images/c/c5/1.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+            <tr>
+                <img src="static/images/c/c5/11.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+        </div>
+        <div class="col text-center ">
+            <tr>
+                <img src="static/images/c/c5/14.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+            <tr>
+                <img src="static/images/c/c5/10.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+            <tr>
+                <img src="static/images/c/c5/16.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+        </div>
+        <div class="col "></div>
+    </div>
+    </div>
+    <div style="padding:30px;margin-right: 60px;text-align: center; ">
+        <h3>CREDIT</h2>
+            <br>
+            <a href="https://www.facebook.com/BlackPackTrip/" class="font-weight-bold " style="color: rgb(0, 0, 0); "><img src="static/images/p/black.jpg " alt=" " class="rounded-circle font-weight-bold " width="50px " height="50px "> BLACK PACK</a>
+            <br>
+            <br>
+            <a href="https://www.facebook.com/BlackPackTrip/"><img src="static/images/p/fb.png" alt="" width="50px" height="50px"></a>
+            <br>
+    </div>
+    <div style="text-align: center;">
+        <h2>แนะนำแหล่งท่องเที่ยว</h2>
+    </div>
+    <div class="container" style="font-size: 17.5px;margin-bottom: 50px;">
+        <div class=" row ">
+            <div class="col ">
+                <a href="{% url 'n5' %}"><img src="static/images/n/n5/1.jpg" alt="" style="width:350px; height:240px;padding:10px;"></a>
+                <img src="static/images/p/dd.jpg " alt=" " class="rounded-circle font-weight-bold " width="50px " height="50px ">เที่ยวดี๊ดี : traveldd</a>
+                <a href="{% url 'n5' %}" class="nav-link">
+                    <p style="color: black;font-weight: bold;text-align: center;">บ้านจ่าโบ่ แม่ฮ่องสอน</p>
+                </a>
+            </div>
+            <div class="col ">
+                <a href="{%url 'n1' %}"><img src="static/images/n/n1/1.jpg" alt="" style="width:350px; height:240px;padding:10px;"></a>
+                <img src="static/images/p/getout.jpg " alt=" " class="rounded-circle font-weight-bold " width="50px " height="50px "> GetOut ก้าวออกไป</a>
+                <a href="{% url 'n1' %}" class="nav-link">
+                    <p style="color: black;font-weight: bold;text-align: center;">เสาดินนาน้อย น่าน</p>
+                </a>
+            </div>
+            <div class="col ">
+                <a href="{% url 'c8' %}"><img src="static/images/c/c8/1.jpg" alt="" style="width:350px; height:240px;padding:10px;"></a>
+                <img src="static/images/p/เที่ยวแล้ว.jpg " alt=" " class="rounded-circle font-weight-bold " width="50px " height="50px "> เที่ยวแล้วเที่ยวอีก</a>
+                <a href="{% url 'c8' %}" class="nav-link">
+                    <p style="color: black;font-weight: bold;text-align: center;">นครนายก ตอนที่ 2</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+   <section style="text-align: center;">
+        <script>
+            function goBack() {
+                window.history.back()
+            }
+        </script>
+        <script>
+            function goForward() {
+                window.history.forward()
+            }
+        </script>
+
+    </section>
+        <div style="text-align: center;">
+        <input class="btn btn-outline-info" type="button" value="Back" onclick="goBack()">
+        <a href="{% url 'about' %}"> <button type="button" class="btn btn-outline-info">เกี่ยวกับฉัน</button></a>
+        <a href="{% url 'central' %}"> <button type="button" class="btn btn-outline-info">ภาคกลาง</button></a>
+        <a href="{% url 'north' %}"> <button type="button" class="btn btn-outline-info">ภาเหนือ</button></a>
+        <a href="{% url 'south' %}"> <button type="button" class="btn btn-outline-info">ภาคใต้</button></a>
+        <a href="{% url 'northeast' %}"><button type="button" class="btn btn-outline-info">ภาคอีสาน</button></a>
+        <a href="{% url 'camping' %}"> <button type="button" class="btn btn-outline-info">แคมป์ปิ้ง</button></a>
+        <a href="{% url 'nature' %}"> <button type="button" class="btn btn-outline-info">ธรรมชาติ</button></a>
+        <a href="{% url 'photograph' %}"> <button type="button" class="btn btn-outline-info">ถ่ายรูป</button></a>
+        <a href="{% url 'sea' %}"> <button type="button" class="btn btn-outline-info">ทะเล</button></a>
+        <input class="btn btn-outline-info" type="button" value="Forward" onclick="goForward()">
+    </div>
+    <div class="jumbotron " style="margin-bottom:0;background-color: #213357; ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col ">
+                    <p>
+                        <a href="{% url 'about' %}" style="font-size: 18px;color: rgb(255, 255, 255); ">เกี่ยวกับฉัน</a></p>
+                    <br>
+
+                    <p>
+                        <a href="{% url 'region' %}" style="font-size: 18px;color: rgb(255, 255, 255); ">ภาคของไทย</a></p>
+                    <div style="padding-top:50px;text-align: left;color:#ffffff;">
+
+                        นักศึกษา ชั้นปีที่ 3
+                        <br> สาขาวิชาวิศวกรรมสารสนเทศ คณะวิศวกรรมศาสตร์
+                        <br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+                    </div>
+
+                </div>
+                <div class="col ">
+                    <p>
+                        <a href="{% url 'group' %} " style="font-size: 18px;color: rgb(255, 255, 255); ">หมวดเที่ยว</a></p>
+                    <br>
+
+                    <p>
+                      <a href="{% url 'contact' %}" style="font-size: 18px;color: rgb(255, 255, 255); ">Contact</a></p>
+               </div>
+                <div class="col ">
+                    <img src="static/images/logo4.png " alt=" " width="400px " height="200px ">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+        {% block content %} {% endblock %}
+        <script src="{% static './lib/jquery/jquery-2.2.4.js' %}"></script>
+        <script src="{% static './lib/popper/popper.min.js' %}"></script>
+        <script src="{% static './lib/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

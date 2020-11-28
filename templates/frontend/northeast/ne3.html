@@ -1,0 +1,448 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>{% block title %}ภูกระดึ่ง{% endblock %}</title>
+    <link rel="stylesheet" href="{% static './lib/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static './lib/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static './css/style.css'%}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #213357;padding: 15px;">
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="static/images/logo4.png" alt="" width="160px" height="80px"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item" style="margin-right: 25px;">
+                    <a class="nav-link" href="{% url 'about' %}">เกี่ยวกับฉัน</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="{% url 'region' %}" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ภาคของไทย</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="{% url 'region' %}">ภาคของไทย</a>
+                        <a class="dropdown-item" href="{% url 'central' %}">ภาคกลาง</a>
+                        <a class="dropdown-item" href="{% url 'north' %}">ภาเหนือ</a>
+                        <a class="dropdown-item" href="{% url 'northeast' %}">ภาคอีสาน</a>
+                        <a class="dropdown-item" href="{% url 'south' %}">ภาคใต้</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="หมวดเที่ยว" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หมวดเที่ยว</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{% url 'group' %}">หมวดเที่ยว</a>
+                        <a class="dropdown-item" href="{% url 'camping' %}">แคมป์ปิ้ง</a>
+                        <a class="dropdown-item" href="{% url 'nature' %}">ธรรมชาติ</a>
+                        <a class="dropdown-item" href="{% url 'sea' %}">ทะเล</a>
+                        <a class="dropdown-item" href="{% url 'photograph' %}">ถ่ายรูป</a>
+                    </div>
+                </li>
+                
+            </ul>
+            <a href="{% url 'contact' %} "><button class="btn btn-outline-light " type="submit" style="margin-right: 60px;">CONTACT</button></a>
+          </div>
+        </div>
+    </nav>
+    <img src="static/images/ne/ne3/2.jpg" alt="" width="100%" height="110%">
+    <div class="container" style="font-size: 17.5px;">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col">
+                <br>
+                <p> ผานกเค้า รถจอดหน้าร้านเจ้กิมพอดีเลย เจ้กิมเป็นร้านที่นักท่องเที่ยวมารอรถ พักผ่อน มีที่ให้นอนข้างหลังร้าน มีห้องอาบน้ำฟรี ชาร์จแบตฟรี มีตู้ ATM กดตังค์ให้พร้อมนะจ๊ะ ก่อนขึ้นรถ2แถว เพราะที่อุทยานไม่มีตู้ ATM นร้าาาาาทุกโค้นนน
+
+                </p>
+
+                <br>
+
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <img src="static/images/ne/ne3/3.jpg" alt="" width="75%" height="100%">
+    </div>
+
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p>
+                    เข้าไปถึงเจ้าหน้าทีอุทยานให้เราทำประกันอุบัติเหตุ 10 บาท
+                    <br> ค่าเข้าอุทยานคนละ 40 บาท
+
+                </p>
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <img src="static/images/ne/ne3/18.jpg" alt="" width="75%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p> เส้นทางการเดินขึ้นภูกระดึง จากป้ายใช้เวลาประมาณ 3-5 ชม.
+                </p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <img src="static/images/ne/ne3/4.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p>
+                    ภูเขาลูกนี้มีความสูงจากระดับน้ำทะเล 1,288 เมตร การเดินทางขึ้นไปเราจะผ่านหลายๆซำ แต่ละซำมีป่าที่สวยงามให้เราได้ชมตลอดทาง...</p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <img src="static/images/ne/ne3/5.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p>
+                    ไปต่อ ซำบอนแล้ว สูงขึ้นเรื่อยๆ ป่าก็จะเปลี่ยนไปเป็นอีกสี เริ่มรักป่าแล้วสิ ซำนี้ก็มีของขายเหมือนกัน </p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <img src="static/images/ne/ne3/6.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p>
+                    ไปต่อค่ะ เดินไปเรื่อยๆไม่ต้องรีบ เหนื่อยก็พัก จะบอกว่าพวกเราพักทุกซำ กินทุกซำจ้าาา 555+ สำหรับคนที่กังวลว่า ถ้าปวดฉี่ ปวดอึจะทำยังไง ไม่ต้องกลัวค่ะ เพราะว่าทุกซำมีห้องน้ำให้เราเข้าฟรีจ้าาาา
+                </p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center">
+        <img src="static/images/ne/ne3/16.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p>
+                    บอกแล้วไงว่าเราพักทุกซำจริงๆ ไม่เน้นเดินเร็ว แต่เน้นเดินเรื่อยๆ เชื่อยังว่าเราแวะได้ทุกซำจริงๆ 555+ </p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <img src="static/images/ne/ne3/1.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p>
+
+                    อุทยานแห่งชาติภูกระดึง ในที่สุดเราก็มาถึงแล้วววหลังแป ป้ายที่ทุกคนแห่กันมาถ่ายรูปก็คือ “ครั้งหนึ่งในชีวิตเราคือผู้พิชิตภูกระดึง” บอกตัวเองว่าสุดยอดมาก 555+ เป็นความรู้สึกที่โคตรดีใจอย่างกับถูกลอตเตอรี่รางวัลที่หนึ่งแหละ 555+
+                </p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <img src="static/images/ne/ne3/8.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p>
+                    **แสงสุดท้ายของปี </p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <img src="static/images/ne/ne3/9.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p>
+                    วิวก่อนพระอาทิตย์ขึ้นนน เห็นทั่วเมืองเลยจ้าาา </p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <img src="static/images/ne/ne3/10.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p> แสงแรกของปี สวัสดีปีใหม่ 1 มกราคม 2563 ถามว่าคุ้มไหมกับการทนรอ ตอบว่า คุ้มมาก รูปถ่ายไม่สวยเท่าตาตัวเอง </p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <img src="static/images/ne/ne3/11.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p>
+                    จากสระมุ่งหน้าตรงไปยังผาเหยียบเมฆ ผาเหยียบเมฆเสมือนเราเหยียบอยู่บนเมฆเลย เป็นหน้าผามีล้านหินกว้างๆ วิวสวยมาก </p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <img src="static/images/ne/ne3/12.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p>
+                    หินยื่น จุดซิกเนเจอร์อีกที่หนึ่งของภูกระดึงคือผาหล่มสัก อารมณ์เกาหลีคูลฟินเวอร์มากแม่ บรรยากาศโรแมนติกสุดๆ เก็บรูปไปเรื่อยให้สมกับการปั่นมา 9 กม. 555+ </p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <img src="static/images/ne/ne3/14.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p>
+                    ขากลับแวะถ่ายรูปที่ผานาน้อย ไม่ต้องตกใจนะว่าทำไหมจากไป 8คน เหลือกันแค่ 2คน เราปั่นมาก่อน เราไม่ได้ปั่นเร็วน่ะ แต่เพื่อนปั่นช้าาาา 555+ เสร็จแล้วก็รีบเดินทางกลับลานกางเต็นท์พร้อมไปส่งจักรยานที่พวกเราได้เช่า ไปส่งให้เรียบร้อย เป็นการเช่าจักรยานได้คุ้มจริงๆ
+                    ตระเวนทั่วทุกผาบนภูจริงๆ
+                </p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <img src="static/images/ne/ne3/13.jpg" alt="" width="56%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col-3 "></div>
+            <div class="col ">
+
+                <br>
+                <p>
+                    ถึงข้างล่างแล้ว ถอนหายใจยาวๆๆๆๆๆ ลงมาได้เกียติบัตรผู้พิชิตภูกระดึงด้วย และได้ใบประกาศจิตอาสา เพราะเราแบกขยะที่ไม่สามารถย่อยสลายได้ลงมา 1 กิโล นี่ไง เป็นคนสวยอย่างเดียวไม่พอเป็นคนดีอีกจ้าา 555+ </p>
+
+            </div>
+            <div class="col-3 "></div>
+        </div>
+    </div>
+    <div class="container " style="margin-bottom: 50px; ">
+        <div class="col "></div>
+    </div>
+    <div class="container " style="margin-bottom: 50px; ">
+
+        <div class="col text-center ">
+            <tr>
+                <img src="static/images/ne/ne3/1.jpg " alt=" " width="350px " height="350px ">
+            </tr>
+            <tr>
+                <img src="static/images/ne/ne3/5.jpg " alt=" " width="350px " height="350px ">
+            </tr>
+            <tr>
+                <img src="static/images/ne/ne3/6.jpg " alt=" " width="350px " height="350px ">
+            </tr>
+        </div>
+        <div class="col text-center ">
+            <tr>
+                <img src="static/images/ne/ne3/8.jpg " alt=" " width="350px " height="350px ">
+            </tr>
+            <tr>
+                <img src="static/images/ne/ne3/9.jpg " alt=" " width="350px " height="350px ">
+            </tr>
+            <tr>
+                <img src="static/images/ne/ne3/10.jpg " alt=" " width="350px " height="350px ">
+            </tr>
+        </div>
+        <div class="col text-center ">
+            <tr>
+                <img src="static/images/ne/ne3/15.jpg " alt=" " width="350px " height="350px ">
+            </tr>
+            <tr>
+                <img src="static/images/ne/ne3/3.jpg " alt=" " width="350px " height="350px ">
+            </tr>
+            <tr>
+                <img src="static/images/ne/ne3/12.jpg " alt=" " width="350px " height="350px ">
+            </tr>
+        </div>
+
+        <div class="col "></div>
+    </div>
+    </div>
+    <div style="padding:30px;margin-right: 60px;text-align: center; ">
+        <h3>CREDIT</h2>
+            <br>
+            <a href="https://www.facebook.com/saneeya.juseng" class="font-weight-bold " style="color: rgb(0, 0, 0); "><img src="static/images/p/ya.jpg " alt=" " class="rounded-circle font-weight-bold " width="50px " height="50px ">Saneeya Jhuseng
+            </a>
+            <br>
+            <br>
+            <a href="https://www.facebook.com/saneeya.juseng"><img src="static/images/p/fb.png" alt="" width="50px" height="50px"></a>
+            <br>
+    </div>
+ <div style="text-align: center;">
+        <h2>แนะนำแหล่งท่องเที่ยว</h2>
+    </div>
+    <div class="container" style="font-size: 17.5px;margin-bottom: 50px;">
+        <div class=" row ">
+                     <div class="col ">
+                <a href="{% url 'c1' %}"><img src="static/images/c/c1/1.jpg" alt="" style="width:350px; height:240px;padding:10px;"></a>
+               <img src="static/images/p/getout.jpg " alt=" " class="rounded-circle font-weight-bold " width="50px " height="50px "> GetOut ก้าวออกไป</a>
+                 <a href="{% url 'c1' %}" class="nav-link">
+                    <p style="color: black;font-weight: bold;text-align: center;">บ้านตาหรั่ง สุพรรณบุรี</p>
+                </a>
+            </div>
+            <div class="col ">
+                <a href="{% url 'n6' %}"><img src="static/images/n/n6/1.jpg" alt="" style="width:350px; height:240px;padding:10px;"></a>
+                <img src="static/images/p/chill.jpg " alt=" " class="rounded-circle font-weight-bold " width="50px " height="50px ">Chill Journey :: เที่ยวอย่างชิว</a>
+                <a href="{% url 'n6' %}" class="nav-link">
+                    <p style="color: black;font-weight: bold;text-align: center;">ดอยอ่างขาง เชียงใหม่</p>
+                </a>
+            </div>
+             <div class="col ">
+                <a href="{%url 'n1' %}"><img src="static/images/n/n1/1.jpg" alt="" style="width:350px; height:240px;padding:10px;"></a>
+                <img src="static/images/p/getout.jpg " alt=" " class="rounded-circle font-weight-bold " width="50px " height="50px "> GetOut ก้าวออกไป</a>
+                <a href="{% url 'n1' %}" class="nav-link">
+                    <p style="color: black;font-weight: bold;text-align: center;">เสาดินนาน้อย น่าน</p>
+                </a>
+            </div>
+        </div>
+    </div>
+ <section style="text-align: center;">
+        <script>
+            function goBack() {
+                window.history.back()
+            }
+        </script>
+        <script>
+            function goForward() {
+                window.history.forward()
+            }
+        </script>
+
+    </section>
+       <div style="text-align: center;">
+        <input class="btn btn-outline-info" type="button" value="Back" onclick="goBack()">
+        <a href="{% url 'about' %}"> <button type="button" class="btn btn-outline-info">เกี่ยวกับฉัน</button></a>
+        <a href="{% url 'central' %}"> <button type="button" class="btn btn-outline-info">ภาคกลาง</button></a>
+        <a href="{% url 'north' %}"> <button type="button" class="btn btn-outline-info">ภาเหนือ</button></a>
+        <a href="{% url 'south' %}"> <button type="button" class="btn btn-outline-info">ภาคใต้</button></a>
+        <a href="{% url 'northeast' %}"><button type="button" class="btn btn-outline-info">ภาคอีสาน</button></a>
+        <a href="{% url 'camping' %}"> <button type="button" class="btn btn-outline-info">แคมป์ปิ้ง</button></a>
+        <a href="{% url 'nature' %}"> <button type="button" class="btn btn-outline-info">ธรรมชาติ</button></a>
+        <a href="{% url 'photograph' %}"> <button type="button" class="btn btn-outline-info">ถ่ายรูป</button></a>
+        <a href="{% url 'sea' %}"> <button type="button" class="btn btn-outline-info">ทะเล</button></a>
+        <input class="btn btn-outline-info" type="button" value="Forward" onclick="goForward()">
+    </div>
+    <div class="jumbotron " style="margin-bottom:0;background-color: #213357; ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col ">
+                    <p>
+                        <a href="{% url 'about' %}" style="font-size: 18px;color: rgb(255, 255, 255); ">เกี่ยวกับฉัน</a></p>
+                    <br>
+
+                    <p>
+                        <a href="{% url 'region' %}" style="font-size: 18px;color: rgb(255, 255, 255); ">ภาคของไทย</a></p>
+                    <div style="padding-top:50px;text-align: left;color:#ffffff;">
+
+                        นักศึกษา ชั้นปีที่ 3
+                        <br> สาขาวิชาวิศวกรรมสารสนเทศ คณะวิศวกรรมศาสตร์
+                        <br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+                    </div>
+
+                </div>
+                <div class="col ">
+                    <p>
+                        <a href="{% url 'group' %} " style="font-size: 18px;color: rgb(255, 255, 255); ">หมวดเที่ยว</a></p>
+                    <br>
+
+                    <p>
+  <a href="{% url 'contact' %}" style="font-size: 18px;color: rgb(255, 255, 255); ">Contact</a></p>
+                      </div>
+                <div class="col ">
+                    <img src="static/images/logo4.png " alt=" " width="400px " height="200px ">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    {% block content %} {% endblock %}
+    <script src="{% static './lib/jquery/jquery-2.2.4.js' %}"></script>
+    <script src="{% static './lib/popper/popper.min.js' %}"></script>
+    <script src="{% static './lib/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

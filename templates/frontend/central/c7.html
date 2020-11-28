@@ -1,0 +1,289 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>{% block title %}นครนายก ตอนที่ 1{% endblock %}</title>
+    <link rel="stylesheet" href="{% static './lib/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static './lib/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static './css/style.css'%}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #213357;padding: 15px;">
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="static/images/logo4.png" alt="" width="160px" height="80px"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item" style="margin-right: 25px;">
+                    <a class="nav-link" href="{% url 'about' %}">เกี่ยวกับฉัน</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="{% url 'region' %}" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ภาคของไทย</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="{% url 'region' %}">ภาคของไทย</a>
+                        <a class="dropdown-item" href="{% url 'central' %}">ภาคกลาง</a>
+                        <a class="dropdown-item" href="{% url 'north' %}">ภาเหนือ</a>
+                        <a class="dropdown-item" href="{% url 'northeast' %}">ภาคอีสาน</a>
+                        <a class="dropdown-item" href="{% url 'south' %}">ภาคใต้</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="หมวดเที่ยว" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หมวดเที่ยว</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{% url 'group' %}">หมวดเที่ยว</a>
+                        <a class="dropdown-item" href="{% url 'camping' %}">แคมป์ปิ้ง</a>
+                        <a class="dropdown-item" href="{% url 'nature' %}">ธรรมชาติ</a>
+                        <a class="dropdown-item" href="{% url 'sea' %}">ทะเล</a>
+                        <a class="dropdown-item" href="{% url 'photograph' %}">ถ่ายรูป</a>
+                    </div>
+                </li>
+                 
+            </ul>
+           <a href="{% url 'contact' %} "><button class="btn btn-outline-light " type="submit" style="margin-right: 60px;">CONTACT</button></a>
+           </div>
+        </div>
+    </nav>
+    <img src="static/images/c/c7/1.jpg" alt="" width="100%" height="110%">
+    <div class="container" style="font-size: 17.5px;">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <p> เขาช่องลม
+                    <br>
+                    <br> เขาช่องลม ซ่อนตัวอยู่หลังเขื่อนขุนด่านปราการชล จ.นครนายก
+                    <br> เป็นที่เที่ยวธรรมชาติที่ใกล้กรุงเทพมาก แค่2ชั่วโมงเท่านั้น
+                    <br> แต่เหมือนวาร์ปไปอยู่อีกโลกหนึ่งเลย คือมันสวยมาก เป็นธรรมชาติที่สมบูรณ์มาก โขดหิน ลำธาร น้ำตก ทุ่งหญ้า และถ่ายรูปออกมาสวยสุดๆ ถ่ายมุมไหน ก็สวย มองไปทางไหนก็มีแต่สีเขียว และเราไปช่วงเช้า เจอหมอกด้วย หมอกไหลเอื่อยๆ ฟินสุด สดชื่นสุดๆ
+                    สวยมากๆ มากันเช้าๆน้า ไม่ร้อนมากด้วย
+                </p>
+                <br>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <img src="static/images/c/c7/2.jpg" alt="" width="75%" height="100%">
+    </div>
+    <div class="container" style="font-size: 17.5px;">
+        <div class=" row ">
+            <div class="col "></div>
+            <div class="col ">
+                <p> การเดินทางไปเขาช่องลม
+                    <br>
+                    <br> ปักหมุดไปที่ เขื่อนขุนด่านปราการชล
+                    <br> พิกัด : <a href=" https://goo.gl/maps/hkAXva3Q6LcmVaMV7"> https://goo.gl/maps/hkAXva3Q6LcmVaMV7</a>
+                    <br> ติดต่อลงเรือที่จุดบริการเรือนำเที่ยว ค่าเรือแบบเหมา 1-7คน 1,500 บาท
+                    <br> หรือจอยกรุ๊ป 8 คน คนละ 200 บาท
+                    <br> *** หากในวันหยุดคนเที่ยวเยอะ ทางเรืออาจจะไม่ให้เหมาลำได้ ***
+                    <br> เปิดทุกวัน 7.00-17.00
+                </p>
+                <br>
+            </div>
+            <div class="col "></div>
+        </div>
+    </div>
+
+
+    <div class="container text-center ">
+        <img src="static/images/c/c7/3.jpg " alt=" " width="75%" height="100%">
+    </div>
+    <div class="container " style="font-size: 17.5px; ">
+        <div class="row ">
+            <div class="col "></div>
+            <div class="col ">
+                <p> เขื่อนขุนด่านปราการชล
+                    <br>
+                    <br> ที่เขื่อนขุนด่านปราการชล เราจะสามารถมองเห็น
+                    <br> ไอหมอกบนเขาได้หากมาในช่วงเช้าๆ ในช่วงฤดูฝน บรรยากาศเหมือนกับเราไปเที่ยวภาคเหนือเลย อีกทั้งที่เขื่อนขุนด่านเรายังสามารถนั่งเรือไปเที่ยวตาม จุดต่างๆรอบเขื่อน ไม่ว่าจะเป็นน้ำตก หรือ ตามทุ่งหญ้า สวยๆ เป็นอีกหนึ่งจุดที่คนชอบเที่ยวแนวธรรมชาติ
+                    ต้องแวะมาเที่ยวสักครั้ง
+                    <br> - เขื่อนขุนด่านปราการชล
+                    <br> พิกัด : <a href="https://goo.gl/maps/hkAXva3Q6LcmVaMV7">https://goo.gl/maps/hkAXva3Q6LcmVaMV7</a>
+                    <br> -เปิดทุกวัน 7.00-17.00 น.
+
+                </p>
+                <br>
+            </div>
+            <div class="col "></div>
+        </div>
+    </div>
+    <div class="container text-center ">
+        <img src="static/images/c/c7/4.jpg " alt=" " width="75%" height="100%">
+    </div>
+    <div class="container text-center ">
+        <img src="static/images/c/c7/5.jpg " alt=" " width="75%" height="100%">
+    </div>
+    <div class="container " style="font-size: 17.5px; ">
+        <div class="row ">
+            <div class="col "></div>
+            <div class="col ">
+                <p> น้ำตกนางรอง
+                    <br>
+                    <br> อีกหนึ่งน้ำตกน่าไปเที่ยวของ จ. นครนายก
+                    <br> ที่นี่บรรยากาศร่มเย็น เหมาะกับการมาเล่นน้ำ มานั่งกินข้าว เฮฮากับเพื่อน กับ ครอบครัว เสียดายตอนที่เราไป ฝนพึ่งตกไม่นาน น้ำแรงลงเล่นไม่ได้ น้ำตกนางรอง เดินทางมาไม่ยาก อยู่ใกล้เขื่อนขุนด่าน
+                    <br> พิกัด : <a href="https://goo.gl/maps/ESNYhNxVF6y3bwqL9">https://goo.gl/maps/ESNYhNxVF6y3bwqL9</a>
+
+
+                </p>
+                <br>
+            </div>
+            <div class="col "></div>
+        </div>
+    </div>
+
+    <div class="container " style="margin-bottom: 50px; ">
+        <div class="col "></div>
+    </div>
+    <div class="container " style="margin-bottom: 50px; ">
+
+        <div class="col text-center ">
+            <tr>
+                <img src="static/images/c/c7/4.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+            <tr>
+                <img src="static/images/c/c7/2.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+            <tr>
+                <img src="static/images/c/c7/7.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+        </div>
+        <div class="col text-center ">
+            <tr>
+                <img src="static/images/c/c7/5.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+            <tr>
+                <img src="static/images/c/c7/6.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+            <tr>
+                <img src="static/images/c/c7/8.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+        </div>
+        <div class="col text-center ">
+            <tr>
+                <img src="static/images/c/c7/9.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+            <tr>
+                <img src="static/images/c/c7/1.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+            <tr>
+                <img src="static/images/c/c7/10.jpg " alt=" " width="350px " height="240px ">
+            </tr>
+        </div>
+        <div class="col "></div>
+    </div>
+    </div>
+    <div style="padding:30px;margin-right: 60px;text-align: center; ">
+        <h3>CREDIT</h2>
+            <br>
+            <a href="https://www.facebook.com/travelsagain/" class="font-weight-bold " style="color: rgb(0, 0, 0); "><img src="static/images/p/เที่ยวแล้ว.jpg " alt=" " class="rounded-circle font-weight-bold " width="50px " height="50px "> เที่ยวแล้วเที่ยวอีก</a>
+            <br>
+            <br>
+            <a href="https://www.facebook.com/travelsagain/"><img src="static/images/p/fb.png" alt="" width="50px" height="50px"></a>
+            <a href="https://www.instagram.com/travels_again/?fbclid=IwAR0O3BcrXi9x_s1pDNHDd8_0eUp7YHlcOKP7EAM8Cp6GUFUXx1iFZQP1th8"><img src="static/images/p/ig.png" alt="" width="60px" height="60px"></a>
+            <a href="เที่ยวแล้วเที่ยวอีก - YouTube"><img src="static/images/p/yt.png" alt="" width="40px" height="40px"></a>
+            <a href="เที่ยวแล้วเที่ยวอีก (@Travelsagain) / Twitter"><img src="static/images/p/tw.png" alt="" width="50px" height="50px"></a>
+            <a href="http://www.travelsagain.com/?fbclid=IwAR3_VP5qErRAnQw3b78IFclSCWJp7yWXDD0TB3QUWG2QGCb7THdtPh8Gv7I"><img src="static/images/p/web.png" alt="" width="40px" height="40px"></a>
+            <br>
+    </div>
+
+    <div style="text-align: center;">
+        <h2>แนะนำแหล่งท่องเที่ยว</h2>
+    </div>
+    <div class="container" style="font-size: 17.5px;margin-bottom: 50px;">
+        <div class=" row ">
+            <div class="col ">
+                <a href="{% url 'n3' %}"><img src="static/images/n/n3/1.jpg" alt="" style="width:350px; height:240px;padding:10px;"></a>
+                <img src="static/images/p/goto.jpg " alt=" " class="rounded-circle font-weight-bold " width="50px " height="50px "> เที่ยวไปเลย go to trips</a>
+                <a href="{% url 'n3' %}" class="nav-link">
+                    <p style="color: black;font-weight: bold;text-align: center;">ภูเขาเดียวดาย พะเยา</p>
+                </a>
+            </div>
+            <div class="col ">
+                <a href="{%url 'n6' %}"><img src="static/images/n/n6/1.jpg" alt="" style="width:350px; height:240px;padding:10px;"></a>
+                <img src="static/images/p/chill.jpg " alt=" " class="rounded-circle font-weight-bold " width="50px " height="50px ">Chill Journey :: เที่ยวอย่างชิว</a>
+                <a href="{% url 'n6' %}" class="nav-link">
+                    <p style="color: black;font-weight: bold;text-align: center;">ดอยอ่างขาง เชียงใหม่</p>
+                </a>
+            </div>
+            <div class="col ">
+                <a href="{% url 's5' %}"><img src="static/images/s/s5/1.jpg" alt="" style="width:350px; height:240px;padding:10px;"></a>
+                <img src="static/images/p/goto.jpg " alt=" " class="rounded-circle font-weight-bold " width="50px " height="50px "> เที่ยวไปเลย go to trips</a>
+                <a href="{% url 's5' %}" class="nav-link">
+                    <p style="color: black;font-weight: bold;text-align: center;">Memory House Cafe Huahin ประจวบคีรีขันธ์</p>
+                </a>
+            </div>
+        </div>
+<section style="text-align: center;">
+        <script>
+            function goBack() {
+                window.history.back()
+            }
+        </script>
+        <script>
+            function goForward() {
+                window.history.forward()
+            }
+        </script>
+
+    </section>
+    <div style="text-align: center;">
+        <input class="btn btn-outline-info" type="button" value="Back" onclick="goBack()">
+        <a href="{% url 'about' %}"> <button type="button" class="btn btn-outline-info">เกี่ยวกับฉัน</button></a>
+        <a href="{% url 'central' %}"> <button type="button" class="btn btn-outline-info">ภาคกลาง</button></a>
+        <a href="{% url 'north' %}"> <button type="button" class="btn btn-outline-info">ภาเหนือ</button></a>
+        <a href="{% url 'south' %}"> <button type="button" class="btn btn-outline-info">ภาคใต้</button></a>
+        <a href="{% url 'northeast' %}"><button type="button" class="btn btn-outline-info">ภาคอีสาน</button></a>
+        <a href="{% url 'camping' %}"> <button type="button" class="btn btn-outline-info">แคมป์ปิ้ง</button></a>
+        <a href="{% url 'nature' %}"> <button type="button" class="btn btn-outline-info">ธรรมชาติ</button></a>
+        <a href="{% url 'photograph' %}"> <button type="button" class="btn btn-outline-info">ถ่ายรูป</button></a>
+        <a href="{% url 'sea' %}"> <button type="button" class="btn btn-outline-info">ทะเล</button></a>
+        <input class="btn btn-outline-info" type="button" value="Forward" onclick="goForward()">
+    </div>
+    <div class="jumbotron " style="margin-bottom:0;background-color: #213357; ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col ">
+                    <p>
+                        <a href="{% url 'about' %}" style="font-size: 18px;color: rgb(255, 255, 255); ">เกี่ยวกับฉัน</a></p>
+                    <br>
+
+                    <p>
+                        <a href="{% url 'region' %}" style="font-size: 18px;color: rgb(255, 255, 255); ">ภาคของไทย</a></p>
+                    <div style="padding-top:50px;text-align: left;color:#ffffff;">
+
+                        นักศึกษา ชั้นปีที่ 3
+                        <br> สาขาวิชาวิศวกรรมสารสนเทศ คณะวิศวกรรมศาสตร์
+                        <br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+                    </div>
+
+                </div>
+                <div class="col ">
+                    <p>
+                        <a href="{% url 'group' %} " style="font-size: 18px;color: rgb(255, 255, 255); ">หมวดเที่ยว</a></p>
+                    <br>
+
+                    <p>
+                         <a href="{% url 'contact' %}" style="font-size: 18px;color: rgb(255, 255, 255); ">Contact</a></p>
+                         </div>
+                <div class="col ">
+                    <img src="static/images/logo4.png " alt=" " width="400px " height="200px ">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    {% block content %} {% endblock %}
+    <script src="{% static './lib/jquery/jquery-2.2.4.js' %}"></script>
+    <script src="{% static './lib/popper/popper.min.js' %}"></script>
+    <script src="{% static './lib/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
